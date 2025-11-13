@@ -16,7 +16,7 @@ class Program
         client.DefaultRequestHeaders.UserAgent.Add(
             new ProductInfoHeaderValue("Lab4", "1.0"));
 
-        Console.WriteLine("Häntar data...");
+        Console.WriteLine("Hämtar data...");
 
         await GetDotNetRepositories();
         Console.WriteLine(new string('-', 50));
