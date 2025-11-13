@@ -71,7 +71,7 @@ class Program
 
     private static async Task GetZipCodeInfo()
     {
-        var url = "https://api.zippotam.us/us/07645";
+        var url = "https://api.zippopotam.us/us/07645";
 
         try
         {
