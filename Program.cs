@@ -39,9 +39,9 @@ class Program
                 return;
             }
 
-            var content = await.response.Content.ReadAsStringAsync();
+            var content = await response.Content.ReadAsStringAsync();
 
-            var repositories = JsonSerializer.Deserialize<List<GitHubProjectRepo>>(content);
+            var repositories = JsonSerializer.Deserialize<List<GitHubProjektRepo>>(content);
 
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Repositories under .NET Foundation:");
@@ -96,7 +96,7 @@ class Program
                 Console.ResetColor();
 
                 Console.WriteLine($"ZIP Code {zipCodeInfo.PostCode}" +
-                    $"\nPlace: {place.PlaceTime}" +
+                    $"\nPlace: {place.PlaceName}" +
                     $"\nState: {place.State}" +
                     $"\nLatitude: {place.Latitude}" +
                     $"\nLongitude: {place.Longitude}");
